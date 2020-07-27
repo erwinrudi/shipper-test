@@ -1,0 +1,54 @@
+// Here you can add other styles
+
+html:not([dir="rtl"]) .c-sidebar {
+	margin-left: -256px;
+}
+
+.c-sidebar{
+    background-color: #ffffff;
+    color: #000000;
+    
+    .c-sidebar-nav-link, .c-sidebar-nav-dropdown-toggle{
+        color: #000000;
+        &:hover{
+            background: #FE4439 !important;
+        }
+        &.c-active{
+            color: #FE4439;
+            border-left: 3px solid #FE4439;
+
+            .c-sidebar-nav-icon{
+                color: #FE4439;
+            }
+        }
+        
+        .c-sidebar-nav-icon{
+            color: #000000;
+        }
+    }
+
+    .c-sidebar-nav-link :hover, .c-sidebar-nav-dropdown-toggle :hover{
+        background: #000000;
+    }
+
+    .c-sidebar-nav-title{
+        color: #000000;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) {
+    .c-sidebar{
+        margin-top: 56px;
+    }
+
+    .c-header-fixed{
+        margin-left: -256px;
+    }
+
+    .c-header  {
+        .c-header-toggler{
+            display: none !important;
+        }
+    }
+}
